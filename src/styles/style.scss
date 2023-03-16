@@ -1,0 +1,36 @@
+@import "./variables";
+body{
+    background-color: rgb(25, 25, 25);
+}
+h1{
+    font-family: $font;
+    color: $white_color;
+    text-align: center;
+    font-size: 3rem;
+}
+.contenedor{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    background-color: $blue_color;
+    padding: 25px;
+    border-radius: 25px;
+}
+.btn-operador{
+    //incluyendo el mixin del buttonStyle
+    @include buttonStyle($white_color, $ligth_blue_color)
+}
+.btn-number{
+    //incluyendo el mixin del buttonStyle
+    @include buttonStyle(black, $white_color)
+}
+#texto{
+    width: 200px;
+    height: 25px;
+    background-color: $blue_color;
+    color: $white_color;
+    border: none;
+}

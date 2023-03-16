@@ -1,0 +1,18 @@
+//creando variables para el diseño de los componentes
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+$white_color: rgb(244, 244, 244);
+$blue_color: rgb(27, 69, 125);
+$ligth_blue_color: rgb(87, 171, 206);
+$font:'Raleway', sans-serif;
+
+//mix: forma en como podemos reutilizar componentes utilizando una función
+@mixin buttonStyle($colorLetra, $colorFondo){
+    width: 50px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: $colorLetra;
+    background-color: $colorFondo;
+}
